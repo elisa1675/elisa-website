@@ -1,0 +1,392 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Top bar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+/* Left side */
+.left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Hamburger */
+.hamburger {
+    font-size: 26px;
+    color: #0000cc; /* Matched the blue exactly */
+}
+
+/* Links */
+.left a {
+    text-decoration: none;
+    color: #0000cc;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Logo */
+.right img {
+    height: 60px;
+}
+
+/* Hero section */
+.hero {
+    position: relative; /* This keeps the tickets box from floating away */
+    margin-top: 10px;
+    background-color: #0000cc;   /* blue background */
+    padding: 80px 40px;
+    height: 600px; /* Gives the section some height */
+    overflow: hidden;
+}
+
+/* Small image ("we are both obsolete") */
+.hero-image {
+    width: 400px;   
+}
+
+/* --- TICKETS BOX SECTION --- */
+
+.tickets-container {
+    position: absolute;
+    right: 15%; 
+    top: 40%;   
+    width: 220px;
+    height: 100px;
+}
+
+.green-shadow {
+    position: absolute;
+    background-color: #337a21; /* Dark green */
+    width: 100%;
+    height: 100%;
+    top: 12px;  
+    left: 12px; 
+}
+
+.white-box {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.tickets-text {
+    color: #0000cc;
+    font-weight: bold;
+    font-size: 32px;
+}
+/* DATES SCROLLER */
+
+.dates-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 40px;
+}
+
+.dates-container {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.date-card {
+    min-width: 220px;
+    margin-right: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.day {
+    color: #0000cc;
+    font-size: 18px;
+}
+
+.date {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 6px 0;
+}
+
+.book {
+    color: #337a21;
+    border-top: 2px solid #337a21;
+    display: inline-block;
+    padding-top: 6px;
+    font-size: 16px;
+}
+
+/* ARROW BUTTONS */
+
+.scroll-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #666;
+    padding: 10px;
+}
+
+.scroll-btn:hover {
+    color: #0000cc;
+}
+/* INFO SECTION */
+
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 40px;
+    background-color: white;
+}
+
+/* LEFT CONTENT */
+
+.info-left {
+    width: 65%;
+}
+
+.section-title {
+    color: #0000cc;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.details-line {
+    font-size: 20px;
+    margin: 6px 0;
+}
+
+.details-label {
+    color: #337a21;
+    font-weight: bold;
+}
+
+/* DESCRIPTION COLUMNS */
+
+.description-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.highlight-green {
+    color: #337a21;
+    font-weight: bold;
+}
+
+/* RIGHT IMAGES */
+
+/* FULL-WIDTH DESCRIPTION OVERRIDE */
+
+.info-section {
+    flex-direction: column;
+}
+
+.info-left {
+    width: 100%;
+}
+
+.description-columns {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+}
+
+/* FLOATING RIGHT IMAGES */
+
+.info-right {
+    margin-left: auto;
+    margin-top: -560px;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.squiggle {
+    width: 45%;
+}
+
+
+.squiggle {
+    width: 75%;
+}
+/* SQUIGGLE IMAGE TUNING */
+
+.info-right {
+    width: 380px;        /* bigger container */
+    margin-left: auto;
+    margin-right: 40px;  /* move left */
+}
+
+.squiggle {
+    width: 48%;          /* slightly bigger images */
+}
+/* FEATURED WORKS SECTION */
+
+.featured-works-section {
+    margin-top: 200px; /* pushes section DOWN from text */
+    padding: 80px 40px;
+}
+
+/* GRID */
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    margin-top: 60px;
+}
+
+/* CARD */
+
+.work-card {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* IMAGE BOX (SINGLE BOX ONLY) */
+
+.work-card img {
+    width: 120px;
+    height: auto;
+    padding: 50px;
+    transition: opacity 0.3s ease;
+}
+
+/* COLOR ALTERNATION */
+
+.work-card.green img {
+    background-color: #337a21;
+}
+
+.work-card.blue img {
+    background-color: #0000cc;
+}
+
+/* HOVER */
+
+.work-card:hover img {
+    opacity: 0.7;
+}
+
+/* BUTTON */
+
+.work-card .button {
+    margin-top: 20px;
+    background: #d9d9d9;
+    padding: 12px 24px;
+    font-weight: bold;
+    width: 140px;
+    text-align: center;
+}
+/* MAP PAGE */
+
+.map-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* TITLE */
+
+.map-title {
+    color: #0000cc;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* MAP SECTION */
+
+.map-section {
+    width: 100%;
+    height: calc(100vh - 120px); /* screen height minus title */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* FOOTER */
+
+.site-footer {
+    background-color: #0000cc;
+    color: white;
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: 1.2fr 1.5fr 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* LOGO */
+
+.footer-logo {
+    width: 220px;
+}
+
+/* CONTACT */
+
+.footer-contact p {
+    margin: 0 0 14px 0;
+    font-size: 18px;
+}
+
+/* SOCIAL ICONS */
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    font-size: 28px;
+}
+
+.social-icons i {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons i:hover {
+    opacity: 0.7;
+}
+
+/* LINKS */
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

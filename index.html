@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MSA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="topbar">
+        <div class="left">
+            <span class="hamburger">☰</span>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Tickets</a>
+            <a href="#">Whats on?</a>
+        </div>
+
+        <div class="right">
+            <img src="images/MsaLogo.png">
+        </div>
+    </div>
+
+    <div class="hero">
+        <img class="hero-image" src="images/ObsoleteImage.png">
+
+        <div class="tickets-container">
+            <div class="green-shadow"></div>
+            <div class="white-box">
+                <span class="tickets-text">Tickets</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<!-- DATES SCROLLER -->
+
+<div class="dates-wrapper">
+    <button class="scroll-btn left" onclick="scrollDates(-1)">&#8592;</button>
+
+    <div class="dates-container" id="datesContainer">
+        <div class="date-card">
+            <span class="day">Sunday</span>
+            <span class="date">4 FEB AT 3:00 PM</span>
+            <span class="book">Book Now</span>
+        </div>
+        <div class="date-card">
+            <span class="day">Sunday</span>
+            <span class="date">4 FEB AT 7:30 PM</span>
+            <span class="book">Book Now</span>
+        </div>
+        <div class="date-card">
+            <span class="day">Monday</span>
+            <span class="date">5 FEB AT 7:30 PM</span>
+            <span class="book">Book Now</span>
+        </div>
+        <div class="date-card">
+            <span class="day">Tuesday</span>
+            <span class="date">6 FEB AT 7:30 PM</span>
+            <span class="book">Book Now</span>
+        </div>
+        <div class="date-card">
+            <span class="day">Wednesday</span>
+            <span class="date">7 FEB AT 7:30 PM</span>
+            <span class="book">Book Now</span>
+        </div>
+
+        <!-- NEXT 5 (scrolls into view) -->
+
+        <div class="date-card">
+            <span class="day">Thursday</span>
+            <span class="date">8 FEB AT 7:30 PM</span>
+            <span class="book">Book Now</span>
+        </div>
+        <div class="date-card">
+            <span class="day">Friday</span>
+            <span class="date">9 FEB AT 7:30 PM</span>
+            <span class="book">Book Now</span>
+        </div>
+        <div class="date-card">
+            <span class="day">Saturday</span>
+            <span class="date">10 FEB AT 7:30 PM</span>
+            <span class="book">Book Now</span>
+        </div>
+        <div class="date-card">
+            <span class="day">Sunday</span>
+            <span class="date">11 FEB AT 7:30 PM</span>
+            <span class="book">Book Now</span>
+        </div>
+        <div class="date-card">
+            <span class="day">Monday</span>
+            <span class="date">12 FEB AT 7:30 PM</span>
+            <span class="book">Book Now</span>
+        </div>
+    </div>
+
+    <button class="scroll-btn right" onclick="scrollDates(1)">&#8594;</button>
+</div>
+<!-- DETAILS + DESCRIPTION SECTION -->
+
+<div class="info-section">
+
+    <div class="info-left">
+
+        <h2 class="section-title">Details</h2>
+
+        <p class="details-line">
+            <span class="details-label">Producer:</span> DocStudio Malta
+        </p>
+        <p class="details-line">
+            <span class="details-label">Location:</span> The Malta Society of Arts, Valletta
+        </p>
+
+        <h2 class="section-title">Description</h2>
+
+        <div class="description-columns">
+
+            <p>
+                Reflects on the shared obsolescence of technology and the human condition
+                in the digital age. Through a series of newly developed works, it invites
+                critical engagement with the psychological, social, and environmental
+                costs of technological progress—from the emotional toll of digital
+                acceleration to the material consequences of planned obsolescence and
+                e-waste.
+            </p>
+
+            <p>
+                The works on show span generative video, modified interfaces, sculptural
+                assemblage, and algorithmic sound. Some manipulate obsolete software to
+                create surreal, degraded landscapes; others rewire everyday devices into
+                dysfunctional prototypes or glitch aesthetics. Throughout, physical and
+                digital materials are entangled, printed circuit boards sit alongside
+                brushstrokes while coded behaviours interrupt sculptural forms—blurring
+                the boundary between technological debris and artistic gesture.
+            </p>
+
+            <p>
+                Please explore the systems that make both machines and people disposable:
+                <span class="highlight-green">planned obsolescence, algorithmic burnout,
+                fractured attention,</span> and
+                <span class="highlight-green">the quiet violence of constant upgrades.</span>
+                Visitors are invited to reflect on a culture where relevance is engineered
+                to expire by design, not by necessity.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="info-right">
+        <img src="images/SquiggleImage.png" class="squiggle">
+        <img src="images/SquiggleImage.png" class="squiggle">
+    </div>
+
+</div>
+<!-- FEATURED WORKS SECTION -->
+
+<div class="featured-works-section">
+
+  <h2 class="section-title">Featured Works</h2>
+
+  <div class="works-grid">
+
+    <a href="bin.html" class="work-card green">
+      <img src="images/BinImage.png">
+      <div class="button">More Info</div>
+    </a>
+
+    <a href="eye.html" class="work-card blue">
+      <img src="images/EyeImage.png">
+      <div class="button">More Info</div>
+    </a>
+
+    <a href="paint.html" class="work-card green">
+      <img src="images/PaintImage.png">
+      <div class="button">More Info</div>
+    </a>
+
+    <a href="world.html" class="work-card blue">
+      <img src="images/WorldImage.png">
+      <div class="button">More Info</div>
+    </a>
+
+    <a href="frame.html" class="work-card green">
+      <img src="images/FrameImage.png">
+      <div class="button">More Info</div>
+    </a>
+
+    <a href="computer.html" class="work-card blue">
+      <img src="images/ComputerImage.png">
+      <div class="button">More Info</div>
+    </a>
+
+    <a href="window.html" class="work-card green">
+      <img src="images/WindowImage.png">
+      <div class="button">More Info</div>
+    </a>
+
+    <a href="XImage.html" class="work-card blue">
+      <img src="images/XImage.png">
+      <div class="button">More Info</div>
+    </a>
+
+  </div>
+
+</div>
+<div class="map-page">
+
+    <h1 class="map-title">Map of Objects</h1>
+
+    <div class="map-section">
+        <img src="images/MapImage.png" alt="Map of Objects">
+    </div>
+
+</div>
+<footer class="site-footer">
+
+    <div class="footer-left">
+        <img src="images/MsaLogo.png" alt="MSA Logo" class="footer-logo">
+    </div>
+
+    <div class="footer-contact">
+        <p>E : info@docstudiomalta.mt</p>
+        <p>T : (+356) 76543212</p>
+
+        <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+    </div>
+
+    <div class="footer-links">
+        <a href="#">RELATED NEWS</a>
+        <a href="#">VISIT</a>
+        <a href="#">LEARNING/PARTICIPATION</a>
+        <a href="#">CORPORATE</a>
+        <a href="#">SPONSORS</a>
+    </div>
+
+    <div class="footer-links">
+        <a href="#">NEWS</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">CONTACT US</a>
+        <a href="#">SUPPORT US</a>
+        <a href="#">ARCHIVES</a>
+    </div>
+
+</footer>
+
+
+
